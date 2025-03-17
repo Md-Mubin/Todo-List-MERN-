@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import io from "socket.io-client"
-const socket = io.connect("https://todo-server-avyvv9qhb-md-irfan-rahman-mubins-projects.vercel.app")
+const socket = io.connect("https://todo-server-sandy-chi.vercel.app")
 
 function App() {
 

@@ -10,7 +10,8 @@ const todoSchema = require("./modals/todoSchema")
 app.use(express.json())
 app.use(cors({
     origin : "https://todo-list-mern-plum.vercel.app",
-    credentials : true
+    credentials : true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
 }))
 
 dbConnect()

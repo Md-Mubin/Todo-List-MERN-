@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+body{
+    @apply bg-[#1f1f1f]
+}
+
+@utility container{
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@utility addTask{
+    @apply flex justify-center items-center gap-[20px] relative
+}
+
+input{
+    width: 400px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #4a4a4a;
+    color: #f0f0f0;
+    outline: none;
+    border: none;
+}
+
+button{
+    padding: 10px 25px;
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    border-radius: 10px;
+    transition: all linear 0.1s;
+
+    &:hover{
+        background-color: #2c2a2a;
+        cursor: pointer;
+    }
+
+    &:active{
+        scale: 1.1;
+        box-shadow: 0px 5px 4px #11db3d;
+    }
+}
+
+@utility allTasks{
+    @apply w-[250px] text-[#f0f0f0] text-2xl bg-transparent!
+}
+
+.delete_btn{
+
+    &:hover{
+        color: #fa8888;
+    }
+
+    &:active{
+        box-shadow: 0px 5px 4px #db1111;
+    }
+}
+
+.edit_button{
+    &:hover{
+        color: #88b0fa;
+    }
+
+    &:active{
+        box-shadow: 0px 5px 4px #88b0fa;
+    }
+}

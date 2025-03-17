@@ -8,11 +8,7 @@ const dbConnect = require("./config/dbConnect")
 const todoSchema = require("./modals/todoSchema")
 
 app.use(express.json())
-app.use(cors({
-    origin : ["https://todo-list-mern-plum.vercel.app"],
-    credentials : true,
-    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS']
-}))
+app.use(cors())
 
 dbConnect()
 

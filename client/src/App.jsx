@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import io from "socket.io-client"
-const socket = io.connect("https://todo-list-mern-bw9x.onrender.com/")
+const socket = io.connect("https://localhost:8000")
 
 function App() {
 

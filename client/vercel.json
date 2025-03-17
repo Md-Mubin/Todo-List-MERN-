@@ -12,7 +12,7 @@
     "routes": [
       {
         "src": "/socket.io/.*",
-        "dest": "https://your-backend-url.herokuapp.com",
+        "dest": "https://todo-list-mern-6f8b.onrender.com",
         "headers": {
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Methods": "GET,POST"
